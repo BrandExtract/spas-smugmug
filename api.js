@@ -1,4 +1,4 @@
-var spasRequest = require("../spas-request")
+var spashttp = require("spas-http")
 	, _ = require("underscore")._
   	, url = "https://api.smugmug.com/services/api/json/1.3.0/?method="
 ;
@@ -13,7 +13,7 @@ exports["custom"] = {
 		
 		params.url = url + "smugmug.albums.get";
 		
-		spasRequest.request(params, credentials, function( err, albums ) {
+		spashttp.request(params, credentials, function( err, albums ) {
 			
 			var n = albums.Albums.length;
 			
