@@ -21,7 +21,7 @@ exports["custom"] = {
 				
 				params.url = url + "smugmug.images.get" + "&Heavy=true&AlbumID=" + obj.id + "&AlbumKey=" + obj.Key + "&APIKey="+params.APIKey;
 				
-				spasRequest.request(params, credentials, function( err, photos ) {
+				spashttp.request(params, credentials, function( err, photos ) {
 					n = n - 1;
 					albums.Albums[key].Images = photos.Album.Images;
 					albums.size += photos.size;
