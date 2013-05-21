@@ -1,7 +1,7 @@
 {
   "name": "spas-smugmug",
   "description": "SmugMug API helpers for SPAS",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "author": {
     "name": "Donovan Buck",
     "email": "donovan@donovan.bz",
