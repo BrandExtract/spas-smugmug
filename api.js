@@ -25,7 +25,7 @@ exports["custom"] = {
 					
 					spashttp.request(params, credentials, function( err, photos ) {
 						n = n - 1;
-						if (photos.Album) {
+						if (_.has(photos, 'Album')) {
 							albums.Albums[key].Images = photos.Album.Images;
 							albums.size += photos.size;
 						}
